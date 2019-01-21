@@ -151,3 +151,31 @@ footer {
 }
 
 
+@media screen and (max-width: 480px) {
+	.header,
+	.menu-nav,
+	.main {
+		flex-direction: column;
+	}
+
+	.header {
+		align-items: center;
+		padding: 20px;
+	}
+
+	.header__logo {
+		background-color: rgba(0,0,0,0);
+	}
+
+	.header__title {
+		margin-left: 0;
+	}
+
+	.menu-nav__item {
+		width: 100%;
+	}
+
+	.side-content {
+		order: 1;
+	}
+}

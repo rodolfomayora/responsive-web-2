@@ -68,6 +68,10 @@ footer {
 	align-items : center;
 }
 
+.menu-nav__burger {
+	display: none;
+}
+
 .menu-nav__item {
 	width 		: 150px;
 	list-style: none;
@@ -169,6 +173,14 @@ footer {
 
 	.header__title {
 		margin-left: 0;
+	}
+
+	.menu-nav__burger {
+		display: block;
+	}
+
+	.menu-nav {
+		display: none;
 	}
 
 	.menu-nav__item {

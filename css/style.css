@@ -34,10 +34,25 @@ footer {
 /*	HEADER
 ===========================================================*/
 .header {
-	padding 				: 60px;
+	display 				: flex;
+	padding 				: 40px;
 	text-align 			: center;
 	color 					: #262626;
 	background-color: #ffd36f;
+}
+
+.header__logo {
+	width 					: 150px;
+	height 					: 150px;
+	background-color: #444;
+	border-radius 	: 50%;
+}
+
+.header__title {
+	flex: 1;
+	align-self: center;
+	/*mantener el titulo en el centro de la pantalla */
+	margin-right: 10%;
 }
 
 /*	NAVIGATION BAR

@@ -6,13 +6,14 @@ let elemento = document.getElementById("menu-nav__burger");
 elemento.addEventListener("click", mostrarMenu);
 
 function mostrarMenu() {
-	let elemento = document.getElementById("menu-nav");
-
+	let elemento = document.querySelector(".menu-nav");
+	let myClass = elemento.getAttribute("class");
 	if(!visible) {
-		elemento.style.display = "block";
+		elemento.setAttribute("class","menu-nav js-menu");
 		visible = true;
 	} else {
-		elemento.style.display = "none";
+		elemento.setAttribute("class","menu-nav");;
 		visible = false;
 	}
+
 }

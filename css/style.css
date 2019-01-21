@@ -182,6 +182,10 @@ footer {
 	.menu-nav {
 		display: none;
 	}
+	/* esta clase es solo para la funcion mostrarMenu en el script */
+	.js-menu {
+		display: block;
+	}
 
 	.menu-nav__item {
 		width: 100%;

@@ -127,3 +127,27 @@ footer {
 
 /*	MEDIA QUERIES
 ===========================================================*/
+@media screen and (max-width: 768px) {
+	.header {
+		justify-content : center;
+		padding 				: 25px;
+	}
+
+	.header__logo {
+		width : 120px;
+		height: 120px;
+	}
+
+	.header__title {
+		flex 				: 0;
+		margin-right: 0;
+		margin-left : 5%;
+	}
+
+	.menu-nav { justify-content: center; }
+
+	.side-content { flex: 2; }
+
+}
+
+

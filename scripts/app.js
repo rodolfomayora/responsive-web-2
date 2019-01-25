@@ -2,18 +2,20 @@
 
 let visible = false;
 
-let elemento = document.getElementById("menu-nav__burger");
+let elemento = document.querySelector("#menu-nav__burger");
 elemento.addEventListener("click", mostrarMenu);
 
 function mostrarMenu() {
 	let elemento = document.querySelector(".menu-nav");
-	let myClass = elemento.getAttribute("class");
 	if(!visible) {
-		elemento.setAttribute("class","menu-nav js-menu");
+		// o con elemento.classList.toggle("js-menu"); 
+		elemento.classList.add("js-menu");
 		visible = true;
 	} else {
-		elemento.setAttribute("class","menu-nav");;
+		elemento.classList.remove("js-menu");
+		// o con elemento.classList.toggle("js-menu"); 
 		visible = false;
 	}
-
+	
 }
+
